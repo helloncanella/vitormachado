@@ -43,7 +43,7 @@ app.get("/registro", async (req, res) => {
     data: new Date().toISOString()
   })
 
-  fs.writeFileSync(path, JSON.stringify(lines))
+  fs.writeFileSync(dataFilePath, JSON.stringify(lines))
 
   return res.end(`<h1>Registrada caixa ${caixa} com sucesso!</h1>`)
 })
