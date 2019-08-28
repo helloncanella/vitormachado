@@ -13,7 +13,8 @@ const httpServer = http.createServer(app)
 
 app.use(cors())
 
-app.use(express.static(path.join(__dirname, "./client/build")))
+// Serve static files from the React app
+app.use(express.static(path.join(__dirname, "client/build")))
 
 const dataFilePath = "./server/data/data.json"
 
@@ -47,9 +48,10 @@ app.get("/registro", async (req, res) => {
   return res.end(`<h1>Registrada caixa ${caixa} com sucesso!</h1>`)
 })
 
-//TODO: move rendering login to specialized server.
-app.get("*", function(req, res) {
-  res.sendFile(path.join(__dirname, "./client/build", "index.html"))
+// The "catchall" handler: for any request that doesn't
+// match one above, send back React's index.html file.
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname + "/client/build/index.html"))
 })
 
 httpServer.listen(PORT, () => {
