@@ -16,7 +16,7 @@ app.use(cors())
 // Serve static files from the React app
 app.use(express.static(path.join(__dirname, "client/build")))
 
-const dataFilePath = "./server/data/data.json"
+const dataFilePath = path.join(__dirname, "./server/data/data.json")
 
 app.get("/fetchTable", async (req, res) => {
   // console.log( const path = "./server/data/data.json")
