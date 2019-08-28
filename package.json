@@ -1,0 +1,27 @@
+{
+  "name": "vitor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "esm": "^3.2.25",
+    "express": "^4.17.1",
+    "json2csv": "^4.5.2",
+    "lodash": "^4.17.15",
+    "nodemon": "^1.19.1"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "client/*",
+      "**/*.json"
+    ],
+    "delay": "100"
+  }
+}

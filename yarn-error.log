@@ -1,0 +1,46 @@
+Arguments: 
+  /Users/helloncanella/.nvm/versions/node/v8.15.0/bin/node /usr/local/Cellar/yarn/1.12.1/libexec/bin/yarn.js add express, nodemon, esm
+
+PATH: 
+  /Users/helloncanella/.nvm/versions/node/v8.15.0/bin:/usr/local/opt/node@8/bin:/usr/local/opt/node@10/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/TeX/texbin:/Users/helloncanella/.nvm/versions/node/v8.15.0/bin:/usr/local/opt/node@8/bin:/usr/local/opt/node@10/bin
+
+Yarn version: 
+  1.12.1
+
+Node version: 
+  8.15.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/express,: Not found
+      at Request.params.callback [as _callback] (/usr/local/Cellar/yarn/1.12.1/libexec/lib/cli.js:63139:18)
+      at Request.self.callback (/usr/local/Cellar/yarn/1.12.1/libexec/lib/cli.js:124547:22)
+      at emitTwo (events.js:126:13)
+      at Request.emit (events.js:214:7)
+      at Request.<anonymous> (/usr/local/Cellar/yarn/1.12.1/libexec/lib/cli.js:125519:10)
+      at emitOne (events.js:116:13)
+      at Request.emit (events.js:211:7)
+      at IncomingMessage.<anonymous> (/usr/local/Cellar/yarn/1.12.1/libexec/lib/cli.js:125441:12)
+      at Object.onceWrapper (events.js:313:30)
+      at emitNone (events.js:111:20)
+
+npm manifest: 
+  {
+    "name": "vitor",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "ISC"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
